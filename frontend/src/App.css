@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f7ff, #ffe8f7);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1 1 45%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #4a3cb3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background: #f0f0ff;
+}
+
+.task-item button {
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-item button:first-of-type {
+  background: #4caf50;
+  color: white;
+  margin-right: 6px;
+}
+
+.task-item button:first-of-type:hover {
+  background: #3e8e41;
+}
+
+.task-item button:last-of-type {
+  background: #e74c3c;
+  color: white;
+}
+
+.task-item button:last-of-type:hover {
+  background: #c0392b;
+}
+
+.insights-panel {
+  margin-top: 20px;
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.insights-panel h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
