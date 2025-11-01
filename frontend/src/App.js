@@ -15,14 +15,14 @@ class App extends React.Component {
   }
 
   fetchTasks = () => {
-    fetch("http://localhost:5000/api/tasks")
+    fetch("https://btha.onrender.com/api/tasks")
       .then((res) => res.json())
       .then((data) => this.setState({ tasks: data }))
       .catch((err) => console.error("Error fetching tasks:", err));
   };
 
   addTask = (task) => {
-    fetch("http://localhost:5000/api/tasks", {
+    fetch("https://btha.onrender.com/api/tasks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(task),
@@ -32,12 +32,12 @@ class App extends React.Component {
   };
 
   toggleTask = (id) => {
-    fetch(`http://localhost:5000/api/tasks/${id}`, { method: "PUT" })
+    fetch(`https://btha.onrender.com/api/tasks/${id}`, { method: "PUT" })
       .then(() => this.fetchTasks());
   };
 
   deleteTask = (id) => {
-    fetch(`http://localhost:5000/api/tasks/${id}`, { method: "DELETE" })
+    fetch(`https://btha.onrender.com/api/tasks/${id}`, { method: "DELETE" })
       .then(() => this.fetchTasks());
   };
 
